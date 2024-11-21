@@ -1,36 +1,101 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>موقعي البسيط</title>
+    <title>موقع ساجد جابر</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 20px;
-            background-color: #f4f4f4;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #00c6ff, #0072ff);
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+            overflow: hidden;
         }
+
         h1 {
-            color: #3498db;
+            font-size: 3em;
+            animation: slideIn 3s ease-in-out infinite alternate;
+            text-align: center;
         }
-        p {
-            color: #555;
+
+        h2, h3 {
+            font-size: 2em;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out 1s forwards, moveUp 2s ease-in-out 3s forwards;
         }
-        a {
-            text-decoration: none;
-            color: #3498db;
-            font-weight: bold;
+
+        h2 {
+            color: #f39c12;
         }
-        a:hover {
-            color: #2c3e50;
+
+        h3 {
+            color: #e74c3c;
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes moveUp {
+            0% {
+                transform: translateY(50px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .content {
+            text-align: center;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        .button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #2980b9;
+            border: none;
+            color: white;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #3498db;
         }
     </style>
 </head>
 <body>
-    <h1>مرحبًا بك في موقعي البسيط</h1>
-    <p>هذا مثال لموقع بسيط باستخدام HTML و CSS.</p>
-    <a href="https://github.com" target="_blank">زر GitHub</a>
+
+    <div class="content">
+        <h1>مرحبًا، أنا ساجد جابر</h1>
+        <h2>مدرستي: السواحل الرياضية بنين</h2>
+        <h3>تاريخ الميلاد: 2011/10/26</h3>
+        <button class="button">تواصل معي</button>
+    </div>
+
 </body>
 </html>

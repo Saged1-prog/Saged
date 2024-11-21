@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ساجد جابر</title>
+    <title>saged gaber </title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -11,13 +11,16 @@
             margin: 0;
             padding: 0;
             color: #333;
+            direction: rtl;
         }
 
         header {
             background-color: #007BFF;
             color: white;
-            padding: 20px 0;
+            padding: 20px 10px;
             text-align: center;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
         }
 
         nav {
@@ -48,151 +51,4 @@
         h2 {
             color: #007BFF;
             text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .card {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            margin-bottom: 30px;
-        }
-
-        .card-header {
-            font-size: 1.5em;
-            color: #333;
-            margin-bottom: 15px;
-        }
-
-        .card-body {
-            font-size: 1.1em;
-            color: #555;
-            line-height: 1.6;
-        }
-
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #007BFF;
-            color: white;
-            position: relative;
-            width: 100%;
-            font-size: 1em;
-            margin-top: 50px; /* إبعاد التذييل عن باقي المحتوى */
-        }
-
-        .footer-info {
-            font-size: 1em;
-            color: #ddd;
-            margin-top: 10px;
-        }
-
-        .btn {
-            background-color: #28a745;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1.1em;
-            transition: background-color 0.3s ease;
-        }
-
-        .btn:hover {
-            background-color: #218838;
-        }
-    </style>
-</head>
-<body>
-
-    <header>
-        <h1>موقع ساجد جابر التعليمي</h1>
-        <p>موقع تعليمي مخصص للطلاب في الصف الأول الإعدادي</p>
-    </header>
-
-    <nav>
-        <a href="#home">الصفحة الرئيسية</a>
-        <a href="#subjects">المنهج الدراسي</a>
-        <a href="#tests">الاختبارات</a>
-        <a href="#resources">المصادر</a>
-    </nav>
-
-    <section id="home">
-        <div class="card">
-            <div class="card-header">
-                مرحباً بك في الموقع التعليمي!
-            </div>
-            <div class="card-body">
-                <p>هذا الموقع يوفر لك موارد تعليمية شاملة لمساعدتك في دراسة المواد المختلفة للصف الأول الإعدادي، بما في ذلك الرياضيات، العلوم، اللغة العربية، والدراسات الاجتماعية.</p>
-                <p>اكتشف العديد من الاختبارات التفاعلية والدروس التعليمية التي يمكنك الاطلاع عليها هنا.</p>
-                <button class="btn" onclick="alert('تم تحميل الدروس بنجاح!')">تحميل الدروس</button>
-            </div>
-        </div>
-    </section>
-
-    <section id="subjects">
-        <h2>المنهج الدراسي</h2>
-        <div class="card">
-            <div class="card-header">الرياضيات</div>
-            <div class="card-body">
-                <p>تعلم أساسيات الرياضيات، مثل الجمع، الطرح، الضرب والقسمة، وغيرها من المواضيع المهمة في المنهج الدراسي.</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-header">اللغة العربية</div>
-            <div class="card-body">
-                <p>استكشف دروس اللغة العربية التي تشمل النحو، الصرف، والقراءة.</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-header">العلوم</div>
-            <div class="card-body">
-                <p>دروس تفاعلية تغطي موضوعات مثل علم الأحياء والكيمياء والفيزياء.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="tests">
-        <h2>الاختبارات الإلكترونية</h2>
-        <div class="card">
-            <div class="card-header">اختبار الرياضيات</div>
-            <div class="card-body">
-                <p>أدِّ اختبارًا تفاعليًا للتحقق من فهمك لموضوعات الرياضيات.</p>
-                <button class="btn" onclick="alert('اختبار الرياضيات بدأ!')">ابدأ الاختبار</button>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-header">اختبار اللغة العربية</div>
-            <div class="card-body">
-                <p>اختبار تقييم للمهارات في اللغة العربية من حيث النحو والقراءة.</p>
-                <button class="btn" onclick="alert('اختبار اللغة العربية بدأ!')">ابدأ الاختبار</button>
-            </div>
-        </div>
-    </section>
-
-    <section id="resources">
-        <h2>المصادر التعليمية</h2>
-        <div class="card">
-            <div class="card-header">روابط مفيدة</div>
-            <div class="card-body">
-                <p>قم بزيارة مواقع الإنترنت التعليمية للحصول على دروس إضافية وشرح تفصيلي للمواد الدراسية.</p>
-                <button class="btn" onclick="window.location.href='https://www.moe.gov.eg/'">زيارة moe.gov</button>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>عمل الطالب: ساجد جابر قرني عبد اللطيف</p>
-        <p>محافظة الإسكندرية، منطقة الجمرك التعليمية</p>
-        <p>الصف الأول الإعدادي</p>
-        <div class="footer-info">
-            <p>جميع الحقوق محفوظة &copy; 2023</p>
-        </div>
-    </footer>
-
-</body>
-</html>
+            margin-bottom:

@@ -77,11 +77,21 @@
             font-size: 1.2em;
             border-radius: 5px;
             transition: background-color 0.3s ease, transform 0.3s ease;
+            animation: buttonHover 2s infinite;
         }
 
         nav a:hover {
             background-color: #003b7d;
             transform: scale(1.1);
+        }
+
+        @keyframes buttonHover {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-5px);
+            }
         }
 
         section {
@@ -140,107 +150,109 @@
             cursor: pointer;
             font-size: 1.1em;
             transition: background-color 0.3s ease, transform 0.3s ease;
+            animation: buttonHover 2s infinite;
         }
 
         .btn:hover {
-            background-color: blueviolet;
-            color: red
+            background-color: darkgray;
+          color: cadetblue
         }
 
         p {
             text-align: center;
         }
+        
     </style>
 </head>
 <body>
-    <header>
-        <p>موقع تعليمي مخصص للطلاب</p>
-    </header>
-    <nav>
-        <a href="#home">الصفحة الرئيسية</a>
-        <a href="#subjects">المنهج الدراسي</a>
-        <a href="#tests">الاختبارات</a>
-        <a href="#resources">المصادر</a>
-    </nav>
-    <section id="home">
-        <div class="card">
-            <div class="card-header">
-                مرحباً بك في الموقع التعليمي!
-            </div>
-            <div class="card-body">
-                <p>هذا الموقع يوفر لك موارد تعليمية شاملة لمساعدتك في دراسة المواد المختلفة لجميع الصفوف الدراسية، بما في ذلك الرياضيات، العلوم، اللغة العربية، والدراسات الاجتماعية.</p>
-                <p>اكتشف العديد من الاختبارات التفاعلية والدروس التعليمية التي يمكنك الاطلاع عليها هنا.</p>
-                <button class="btn" onclick="window.location.href='https://moe.gov.eg//ar/educationalplatform'">زيارة المنصات التعليمية</button>
-            </div>
+<header>
+    <p>موقع تعليمي مخصص للطلاب</p>
+</header>
+<nav>
+    <a href="#home">الصفحة الرئيسية</a>
+    <a href="#subjects">المنهج الدراسي</a>
+    <a href="#tests">الاختبارات</a>
+    <a href="#resources">المصادر</a>
+</nav>
+<section id="home">
+    <div class="card">
+        <div class="card-header">
+            مرحباً بك في الموقع التعليمي!
         </div>
-    </section>
-    <section id="subjects">
-        <h2>المنهج الدراسي</h2>
-        <div class="card">
-            <div class="card-header">
-                الرياضيات
-            </div>
-            <div class="card-body">
-                <p>تعلم أساسيات الرياضيات، مثل الجمع، الطرح، الضرب والقسمة، وغيرها من المواضيع المهمة في المنهج الدراسي.</p>
-            </div>
+        <div class="card-body">
+            <p>هذا الموقع يوفر لك موارد تعليمية شاملة لمساعدتك في دراسة المواد المختلفة لجميع الصفوف الدراسية، بما في ذلك الرياضيات، العلوم، اللغة العربية، والدراسات الاجتماعية.</p>
+            <p>اكتشف العديد من الاختبارات التفاعلية والدروس التعليمية التي يمكنك الاطلاع عليها هنا.</p>
+            <button class="btn" onclick="window.location.href='https://moe.gov.eg//ar/educationalplatform'">زيارة المنصات التعليمية</button>
         </div>
-        <div class="card">
-            <div class="card-header">
-                اللغة العربية
-            </div>
-            <div class="card-body">
-                <p>استكشف دروس اللغة العربية التي تشمل النحو، الصرف، والقراءة.</p>
-            </div>
+    </div>
+</section>
+<section id="subjects">
+    <h2>المنهج الدراسي</h2>
+    <div class="card">
+        <div class="card-header">
+            الرياضيات
         </div>
-        <div class="card">
-            <div class="card-header">
-                العلوم
-            </div>
-            <div class="card-body">
-                <p>دروس تفاعلية تغطي موضوعات مثل علم الأحياء والكيمياء والفيزياء.</p>
-            </div>
+        <div class="card-body">
+            <p>تعلم أساسيات الرياضيات، مثل الجمع، الطرح، الضرب والقسمة، وغيرها من المواضيع المهمة في المنهج الدراسي.</p>
         </div>
-    </section>
-    <section id="tests">
-        <h2>الاختبارات الإلكترونية</h2>
-        <div class="card">
-            <div class="card-header">
-                اختبار الرياضيات
-            </div>
-            <div class="card-body">
-                <p>أدِّ اختبارًا تفاعليًا للتحقق من فهمك لموضوعات الرياضيات.</p>
-                <button class="btn" onclick="window.location.href='https://bit.ly/3ZiMfS1'">اختبر </button>
-            </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            اللغة العربية
         </div>
-        <div class="card">
-            <div class="card-header">
-                اختبار اللغة العربية
-            </div>
-            <div class="card-body">
-                <p>اختبار تقييم للمهارات في اللغة العربية من حيث النحو والقراءة.</p>
-                <button class="btn" onclick="window.location.href='https://bit.ly/4fDvuGU'">اختبر </button>
-            </div>
+        <div class="card-body">
+            <p>استكشف دروس اللغة العربية التي تشمل النحو، الصرف، والقراءة.</p>
         </div>
-    </section>
-    <section id="resources">
-        <h2>المصادر التعليمية</h2>
-        <div class="card">
-            <div class="card-header">
-                روابط مفيدة
-            </div>
-            <div class="card-body">
-                <p>قم بزيارة مواقع الإنترنت التعليمية للحصول على دروس إضافية وشرح تفصيلي للمواد الدراسية.</p>
-                <button class="btn" onclick="window.location.href='https://www.moe.gov.eg/'">زيارة moe.gov</button>
-            </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            العلوم
         </div>
-    </section>
-    <footer>
-        <p>عمل الطالب: ساجد جابر قرني عبد اللطيف</p>
-        <p>محافظة الإسكندرية، منطقة الجمرك التعليمية</p>
-        <p>الصف الأول الإعدادي</p>
-        <div class="footer-info">
-            <p>جميع الحقوق محفوظة © 2023</p>
+        <div class="card-body">
+            <p>دروس تفاعلية تغطي موضوعات مثل علم الأحياء والكيمياء والفيزياء.</p>
         </div>
-    </footer>
+    </div>
+</section>
+<section id="tests">
+    <h2>الاختبارات الإلكترونية</h2>
+    <div class="card">
+        <div class="card-header">
+            اختبار الرياضيات
+        </div>
+        <div class="card-body">
+            <p>أدِّ اختبارًا تفاعليًا للتحقق من فهمك لموضوعات الرياضيات.</p>
+            <button class="btn" onclick="window.location.href='https://bit.ly/3ZiMfS1'">اختبر </button>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            اختبار اللغة العربية
+        </div>
+        <div class="card-body">
+            <p>اختبار تقييم للمهارات في اللغة العربية من حيث النحو والقراءة.</p>
+            <button class="btn" onclick="window.location.href='https://bit.ly/4fDvuGU'">اختبر </button>
+        </div>
+    </div>
+</section>
+<section id="resources">
+    <h2>المصادر التعليمية</h2>
+    <div class="card">
+        <div class="card-header">
+            روابط مفيدة
+        </div>
+        <div class="card-body">
+            <p>قم بزيارة مواقع الإنترنت التعليمية للحصول على دروس إضافية وشرح تفصيلي للمواد الدراسية.</p>
+            <button class="btn" onclick="window.location.href='https://www.moe.gov.eg/'">زيارة moe.gov</button>
+        </div>
+    </div>
+</section>
+<footer>
+    <p>عمل الطالب: ساجد جابر قرني عبد اللطيف</p>
+    <p>محافظة الإسكندرية، منطقة الجمرك التعليمية</p>
+    <p>الصف الأول الإعدادي</p>
+    <div class="footer-info">
+        <p>جميع الحقوق محفوظة © 2023</p>
+    </div>
+</footer>
 </body>
 </html>
